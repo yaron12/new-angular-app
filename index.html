@@ -1,0 +1,30 @@
+<html ng-app="app">
+	<head>
+		<title>new angular app</title>
+	</head>
+	<body>
+		
+		<nav>
+							<ul>
+								<li>
+									<a href="#about">about</a>
+								</li>
+								<li>
+									<a href="#main">main</a>
+								</li>
+							
+
+							</ul>
+			</nav>				
+		<ng-view></ng-view>
+		
+		
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="node_modules/angular-route/angular-route.js"></script>
+		<script src="app/config.js"></script>
+	    <script src="app/route.js"></script>
+		<script src="app/controllers/main.js"></script>
+		<script src="app/controllers/about.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<div ng-controller="main">
+		<button ng-click="getData()">
+			click
+		</button>
+		<div>
+			<ul>
+				<li  ng-repeat="d in data">
+					<h3>Name:</h3>{{d.name}} <h3>Email:</h3>{{d.email}}
+					<ul>
+						<h1>Friends</h1>
+						<li ng-repeat="e in d.friends">
+							{{e.name}}
+						</li>
+				</li>
+			</ul>
+			</ul>
+		</div>
+		</div>
